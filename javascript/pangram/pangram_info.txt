@@ -1,0 +1,4 @@
+pangram_info.txt
+// create hash all aphabetic char as key, its value is 0
+after parse the sentence
+if all values of hash is 1 => it is a pangram.

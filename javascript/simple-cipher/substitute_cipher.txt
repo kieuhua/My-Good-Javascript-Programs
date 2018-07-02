@@ -1,0 +1,80 @@
+substitute_cipher.txt
+
+https://en.wikipedia.org/wiki/Substitution_cipher
+
+expect(new Cipher('abc').encode('iamapandabear'))
+      .toEqual('iboaqcnecbfcr');
+      key = 'abc'
+      i=i(a=0)=i; a=a+1=b(b=1); m=m+2(c=2)= o; 
+      a=a(a=0)=a; p=b+1=q; a=a+2(c=2) = c;
+      n=a(a=0)=n; d=d+1(b=1) =e; a(c=2)=a+2 = c;
+      b= a(a=0)=b; e=e+1(b=1) = f; a(c=2)= a+2 = c;
+      r= r(a=0)=r;
+      
+// str= 10
+var key = 'abcdefghij';
+  var cipher = new Cipher(key);
+
+expect(cipher.encode('zzzzzzzzzz')).toEqual('zabcdefghi');    
+      
+expect(cipher.encode('aaaaaaaaaa')).toEqual('abcdefghij');
+
+it(': double shift encode', function () {
+    expect(new Cipher('iamapandabear').encode('iamapandabear'))
+      .toEqual('qayaeaagaciai');
+  });
+  
+  abcdefg hij k  l  m   n  o p   q  r  s  t u  v  w  x  y  z  
+  0123456 789 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
+  'iamapandabear'
+  'qayaeaagaciai'.
+  i+8=q; m+12=y; p+15= e; n+13=a; d+3=g;b+1 =c, e+4=i; r+17=i;
+  a=0; b=2; c=3; d=4;
+
+ Expected 'qauaxavlajmaz' to equal 'qayaeaagaciai'.
+ 
+ acegikmoqs
+ abcdefghij
+ 
+ c-1=b; e-2=c; g-3=d; i-4=e; k-5=f; m-6 = g;
+ 
+ .....ecegikmoqs
+ 
+decode input: ecegikmoqs   // input wrong should be acegikmoqs, so enocode is wrong
+decode result: ebcdefghij
+
+Fdecode input: evqszvqasd
+
+decode result: euopvqkundefinedkundefined
+Fevqszvqasd
+..**acegikmoqs
+decode input: acegikmoqs
+decode result: abcdefghij
+.*.qayaeaagaciai
+.decode input: abcdefghij
+decode result: aaaaaaaaaa
+.abcdefghij
+.
+----------------
+..decode input: wcwiglvomh
+
+decode result: wbufcgphe undefined
+Fencode input: aaaaaaaaaa
+
+encode output:acwiglvomh
+---------------------
+
+Fencode input: abcdefghij
+encode output:acegikmoqs
+
+decode input: acegikmoqs
+-------------------
+
+expect(new Cipher('abc').encode('iamapandabear'))
+.toEqual('iboaqcnecbfcr');
+
+'iamapandabear'
+'iboaqcnecbfcr
+
+
+ 

@@ -1,0 +1,29 @@
+bob_info.txt
+
+'Sure.' if you ask him a question.
+
+'Whoa, chill out!' if you yell at him.
+
+'Calm down, I know what I'm doing!' if you yell a question at him.
+
+'Fine. Be that way!' if you address him without actually saying
+anything.
+
+anything else
+'Whatever'
+
+var result = bob.hey('');
+    expect(result).toEqual('Fine. Be that way!');
+
+var result = bob.hey('WHAT THE HELL WERE YOU THINKING?');
+    expect(result).toEqual("Calm down, I know what I'm doing!");
+    
+var result = bob.hey('WATCH OUT!');
+var result = bob.hey('1, 2, 3 GO!');
+    expect(result).toEqual('Whoa, chill out!');   
+
+var result = bob.hey('Wait! Hang on.  Are you going to be OK?');
+    expect(result).toEqual('Sure.');
+    
+var result = bob.hey('Wait! Hang on.  Are you going to be OK?');
+    expect(result).toEqual('Sure.');
